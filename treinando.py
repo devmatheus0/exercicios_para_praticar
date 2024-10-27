@@ -34,3 +34,20 @@ print(list_of_n)
 for i in list_of_n:
     square = i ** 2
     print(square)
+
+# Definir se um ano é bissexto ou não
+
+year = int(input('Insira um ano '))
+
+def is_leap(year):
+    leap = False
+    
+    if year % 4 == 0 and year % 100 == 0:
+        if year % 400 == 0:
+            leap = True
+    elif year % 4 == 0:
+        leap = True
+    
+    return leap
+
+print(is_leap(year))
