@@ -51,3 +51,19 @@ def is_leap(year):
     return leap
 
 print(is_leap(year))
+
+#Escreva um programa onde um inteiro é inserido e ele imprima uma string com os números no 
+# intervalo 1 a n. Exemplo: input = 5 -> 12345
+
+numero = int(input('Insira um numero inteiro '))
+
+lista_numeros_subsequentes = list(range(1,numero+1))
+lista_string = [str(num) for num in lista_numeros_subsequentes]
+lista_concatenada = ''.join(lista_string)
+print(lista_concatenada)
+
+#Receba o input de um numero de tel e defina se ele é valido de acordo com as regras
+# inicia com 7, 8 ou 9 e tem 10 dígitos
+telefone: int = input('Insira o numero de telefone ')
+telefone_to_list = list(telefone)
+print(telefone_to_list)
